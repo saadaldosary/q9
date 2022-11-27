@@ -1,4 +1,4 @@
-FROM ubi8
+FROM registry.centos.org/centos
 
 # Install cool software
 RUN yum update -y && \
