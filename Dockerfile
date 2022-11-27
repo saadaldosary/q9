@@ -2,8 +2,8 @@ FROM registry.centos.org/centos
 
 # Install cool software
 RUN yum update -y && \
-yum -y install \
-nmap iproute bash && \
+yum install \
+nmap iproute bash -y && \
 yum clean all
 
 ENTRYPOINT ["/usr/bin/nmap"]
