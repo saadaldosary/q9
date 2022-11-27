@@ -1,4 +1,4 @@
-FROM centos
+FROM ubi8
 
 # Install cool software
 RUN yum update -y && \
